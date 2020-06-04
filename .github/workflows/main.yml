@@ -7,7 +7,6 @@ name: CI
 on:
   push:
     branches: [ master ]
-  
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -23,19 +22,21 @@ jobs:
 
     - name: Setup Node.js environment
       uses: actions/setup-node@v2-beta
-      with:
-            version: 12  
+      with: 
+        version: 12
+        
     - name: GitHub Action for Yarn
       uses: Borales/actions-yarn@v2.1.0
       with:
         # Yarn command
-        cmd: install
-    - name:  creating build
-      run: yarn build 
+        cmd: install # npm install/ yarn install
     
-    - name: installing surge
+    - name: Creating build
+      run: yarn build
+    
+    - name: installing surge  
       run: npm install -g surge
-       
-    - name: deploying surge
-      run: surge ./build http://saqibnewreact.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
-        
+    
+    - name: deploying on surge
+      run: surge ./build http://bootcamp_session2.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+ 
