@@ -6,7 +6,7 @@ function App() {
     <div>
      <h1>Welcome</h1>
      <img src="saqi.jpg" width="200px" height="200px" alt="saqib"/>
-     <br/>Hello world from saqib kayani and mujeeb
+     <br/>Hello world from <h1>saqib kayani</h1>  and <h2>mujeeb kayani</h2>
     </div>
   );
 }
