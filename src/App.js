@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <table border="1" align="center">
-<tr>
+<tr style="background:green; color:blue">
   <th>Name </th> <th>RollNo </th>
   </tr>
   <tr>
