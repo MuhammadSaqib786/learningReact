@@ -1,22 +1,16 @@
 import React from 'react';
 import './App.css';
+import Hello from './hello'
 
-function App() {
-  return (
-    <div>
-      <table border="1" align="center">
-<tr>
-  <th>Name </th> <th>RollNo </th>
-  </tr>
-  <tr>
-    <td>Muhammad Saqib </td><td>PIAIC-53984 </td>
-    </tr>
-    <tr>
-    <td>Muhammad ahsan </td><td>PIAIC-53234 </td>
-    </tr>
-        </table>
-        </div>
-  );
+function App({name,age}) {
+return <div> Hello  <strong>{name} </strong> 
+<br/>
+<ul>
+<li>Your Name is : {name}</li>
+<li>Your age is : {age}</li>
+</ul>
+ <Hello firstName={name}/>
+ </div>
 }
 
 export default App;
