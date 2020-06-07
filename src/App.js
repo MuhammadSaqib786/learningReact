@@ -8,6 +8,7 @@ return <div> Hello  <strong>{name} </strong>
 <ul>
 <li>Your Name is : {name}</li>
 <li>Your age is : {age}</li>
+<li>You are computer scientist</li>
 </ul>
  <Hello firstName={name}/>
  </div>
