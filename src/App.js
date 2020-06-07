@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import Hello from './hello'
+import Hello from './hello';
+import myIamge from './saqi.jpg';
 
 function App({name,age}) {
 return <div> Hello  <strong>{name} </strong> 
@@ -11,6 +12,7 @@ return <div> Hello  <strong>{name} </strong>
 <li>You are computer scientist</li>
 </ul>
  <Hello firstName={name}/>
+ <img src={myIamge} alt="kayaniImage" width="200px" height="200px"/>
  </div>
 }
 
