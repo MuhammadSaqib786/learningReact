@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
 import Hello from './hello';
-import myIamge from './saqi.jpg';
+import './index.css'
 
 function App({name,age}) {
-return <div> Hello  <strong>{name} </strong> 
+const [isLit, setLit] = React.useState(true);
+return <div className={`room ${isLit ? "lit" : "dark"}`}> Hello  <strong>{name} </strong> 
 <br/>
 <ul>
 <li>Your Name is : {name}</li>
@@ -12,7 +13,9 @@ return <div> Hello  <strong>{name} </strong>
 <li>You are computer scientist</li>
 </ul>
  <Hello firstName={name}/>
- <img src={myIamge} alt="kayaniImage" width="200px" height="200px"/>
+ <button onClick={() => setLit(!isLit)}>
+    flip
+  </button>
  </div>
 }
 

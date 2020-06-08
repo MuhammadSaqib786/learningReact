@@ -3,9 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import MediaCard from './MediaCard';
+import myimage from './saqi.jpg'
 
 ReactDOM.render(
-    <div> <App name="saqib kayani" age={26}/></div>,
+    <div> <App name="saqib kayani" age={26}/>
+    <MediaCard title="Assignment # 2" body="This is another assignment that passes three arguments title ,body and image and displays in next page" url={myimage}/>
+    </div>,
+    
   
   document.getElementById('root')
 );
