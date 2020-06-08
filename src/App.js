@@ -15,7 +15,8 @@ return <div className={`room ${isLit ? "lit" : "dark"}`}> Hello  <strong>{name} 
  <Hello firstName={name}/>
  <button onClick={() => setLit(!isLit)}>
     flip
-  </button>
+  </button> <br/>
+ 
  </div>
 }
 
